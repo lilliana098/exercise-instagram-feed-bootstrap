@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Instagram Photo Feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="container-fluid bg-secondary">
+            <div class="row">
+                <div class="col-6 ml-4">
+                    <h1 class="px-2 mx-5 my-0">
+                        <i class="fab fa-instagram align-middle"></i>
+                        <img alt="Instagram"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
+                            style="width: 130px; height: 47px;" class="mt-2">
+                    </h1>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-row-reverse mx-5">
+                        <div class="dropdown my-2 mx-1">
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fas fa-cog"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="btn btn-success my-2 mx-1" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Create a New Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here"
+                                id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Description</label>
+                        </div>
+                        <button type="button" class="btn btn-outline-dark my-2">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-dark my-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="align-content-center m-0">
+                <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="btn btn-outline-dark m-2" id="SmallView-tab" data-bs-toggle="tab" href="#SmallView"
+                            role="tab" aria-controls="SmallView" aria-selected="true">
+                            <i class="fas fa-th"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="btn btn-outline-dark m-2 b" id="LargeView-tab" data-bs-toggle="tab" href="#LargeView"
+                            role="tab" aria-controls="LargeView" aria-selected="false">
+                            <i class="fas fa-stop"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div id="SmallView" role="tabpanel" aria-labelledby="SmallView-tab" class="tab-pane fade show active">
+                        <div class="row d-flex justify-content-center w-100">
+                            <img src="http://sevilla.abc.es/contenidopromocionado/wp-content/uploads/sites/2/2019/05/portada-wp-heladerias.jpg"
+                                class="img-thumbnail imgFeed" alt="...">
+                            <img src="https://revistaelconocedor.com/wp-content/uploads/2017/08/postres-1024x683.png"
+                                class="img-thumbnail imgFeed" alt="...">                        
+                            <img src="https://www.dondeir.com/wp-content/uploads/2018/01/dulce-fest-festival-de-postres-y-chocolates-en-polanco-02.jpg"
+                                class="img-thumbnail imgFeed" alt="...">
+                            <img src="https://mui.today/__export/1605913262785/sites/mui/img/2020/11/20/41024_1.jpg_370495822.jpg"
+                                class="img-thumbnail imgFeed" alt="...">
+                            <img src="https://i.pinimg.com/originals/c8/dd/47/c8dd4747076243a33f4976c38feab1d3.jpg" class="img-thumbnail imgFeed" alt="...">
+                            <img src="https://borges.community/wp-content/uploads/2013/10/macedonia-de-frutas.jpg"
+                                class="img-thumbnail imgFeed" alt="...">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="LargeView" role="tabpanel" aria-labelledby="LargeView-tab">
+                        <div class="row d-flex justify-content-center w-100">
+                            <div class="container w-50">
+                                <article class="bg-light">
+                                    <div class="text-font-base">
+                                        <h1 class="float-start fs-3 m-3">Un antojito</h1>
+                                        <h1 class="float-end fs-3 m-3">12/14</h1>
+                                    </div>
+                                    <div>
+                                        <img src="http://sevilla.abc.es/contenidopromocionado/wp-content/uploads/sites/2/2019/05/portada-wp-heladerias.jpg"
+                                            class="w-100">
+                                    </div>
+                                    <p class="pt-4 px-3 mb-1"><strong>232 Likes</strong></p>
+                                    <p class="text-justify px-3">This is my first phone of the feed, this is the a multi line
+                                        comment for testing purpose. I'm leaarling to code with <strong>#BreatheCode</strong>.</p>
+                                    <div class="row mb-4">
+                                        <div class="col-6 ml-4">
+                                            <p class="px-3">
+                                                <i class="far fa-heart"></i> Comment
+                                            </p>             
+                                        </div>       
+                                        <div class="col-6">
+                                            <div class="d-flex flex-row-reverse mx-4">
+                                                <p>
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </p>
+                                            </div>                                
+                                        </div>               
+                                    </div>
+                                </article>
+                                <article class="bg-light">
+                                    <div class="text-font-base">
+                                        <h1 class="float-start fs-3 m-3">Some delicious pictures</h1>
+                                        <h1 class="float-end fs-3 m-3">12/15</h1>
+                                    </div>
+                                    <div>
+                                        <img src="https://revistaelconocedor.com/wp-content/uploads/2017/08/postres-1024x683.png"
+                                            class="w-100">
+                                    </div>
+                                    <p class="pt-4 px-3 mb-1"><strong>240 Likes</strong></p>
+                                    <p class="text-justify px-3">The internet approves this delicious picture...<strong>#BreatheCode</strong>.</p>
+                                    <div class="row mb-4">
+                                        <div class="col-6 ml-4">
+                                            <p class="px-3">
+                                                <i class="far fa-heart"></i> Comment
+                                            </p>             
+                                        </div>       
+                                        <div class="col-6">
+                                            <div class="d-flex flex-row-reverse mx-4">
+                                                <p>
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </p>
+                                            </div>                                
+                                        </div>               
+                                    </div>
+                                </article>
+                                <article class="bg-light">
+                                    <div class="text-font-base">
+                                        <h1 class="float-start fs-3 m-3">And of course... food</h1>
+                                        <h1 class="float-end fs-3 m-3">12/17</h1>
+                                    </div>
+                                    <div>
+                                        <img src="https://www.dondeir.com/wp-content/uploads/2018/01/dulce-fest-festival-de-postres-y-chocolates-en-polanco-02.jpg"class="w-100">
+                                    </div>
+                                    <p class="pt-4 px-3 mb-1"><strong>3258 Likes</strong></p>
+                                    <p class="text-justify px-3">Because no photo feed is cool without some food on it! <strong>#BreatheCode</strong>.</p>
+                                    <div class="row mb-4">
+                                        <div class="col-6 ml-4">
+                                            <p class="px-3">
+                                                <i class="far fa-heart"></i> Comment...
+                                            </p>             
+                                        </div>       
+                                        <div class="col-6">
+                                            <div class="d-flex flex-row-reverse mx-4">
+                                                <p>
+                                                    <i class="fas fa-ellipsis-v"></i>
+                                                </p>
+                                            </div>                                
+                                        </div>               
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+</html>
